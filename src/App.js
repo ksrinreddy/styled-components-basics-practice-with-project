@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
 import { StyledContainer } from "./components/styles/Container.styled";
+import GlobalStyles from "./components/styles/Global.styled";
 
 // theme can be placed in seperate file if its large.
 const theme = {
@@ -16,8 +17,9 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <GlobalStyles />
         <Header />
-        <StyledContainer>App</StyledContainer>
+        <StyledContainer>Container</StyledContainer>
       </>
     </ThemeProvider>
   );
