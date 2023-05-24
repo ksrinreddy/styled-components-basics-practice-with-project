@@ -3,7 +3,7 @@ import { StyledHeader } from "./styles/Header.styled";
 
 const Header = () => {
   return (
-    <StyledHeader>
+    <StyledHeader bg="red">
       <h1>huddle</h1>
     </StyledHeader>
   );
