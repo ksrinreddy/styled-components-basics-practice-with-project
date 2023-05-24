@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
-import { StyledContainer } from "./components/styles/Container.styled";
+import { Container } from "./components/styles/Container.styled";
 import GlobalStyles from "./components/styles/Global.styled";
 
 // theme can be placed in seperate file if its large.
@@ -10,7 +10,9 @@ const theme = {
     header: "#ebfbff",
     body: "#fff",
     footer: "003333",
+    button: "#fff",
   },
+  mobile: "26.563rem",
 };
 
 const App = () => {
@@ -19,7 +21,7 @@ const App = () => {
       <>
         <GlobalStyles />
         <Header />
-        <StyledContainer>Container</StyledContainer>
+        <Container>Content</Container>
       </>
     </ThemeProvider>
   );

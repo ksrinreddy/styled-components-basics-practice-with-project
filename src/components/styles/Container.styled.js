@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
 
-export const StyledContainer = styled.div`
-  background: orange;
-  width: 70vw;
+export const Container = styled.div`
+  width: 90vw;
   max-width: 64rem;
   margin-inline: auto;
 `;
