@@ -10,9 +10,11 @@ const theme = {
     header: "#ebfbff",
     body: "#fff",
     footer: "003333",
-    button: "#fff",
   },
-  mobile: "26.563rem",
+  screens: {
+    mobile: "26.563rem",
+    medium: "48rem",
+  },
 };
 
 const App = () => {
