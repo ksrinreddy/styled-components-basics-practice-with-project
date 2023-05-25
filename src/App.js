@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
 import { Container } from "./components/styles/Container.styled";
 import GlobalStyles from "./components/styles/Global.styled";
+import content from "./content";
+import Card from "./components/Card";
 
 // theme can be placed in seperate file if its large.
 const theme = {
@@ -23,7 +25,11 @@ const App = () => {
       <>
         <GlobalStyles />
         <Header />
-        <Container>Content</Container>
+        <Container>
+          {content.map((item) => {
+            return <Card key={item.id} item={item} />;
+          })}
+        </Container>
       </>
     </ThemeProvider>
   );
