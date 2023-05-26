@@ -25,7 +25,7 @@ const App = () => {
       <>
         <GlobalStyles />
         <Header />
-        <Container>
+        <Container ptb="3rem">
           {content.map((item) => {
             return <Card key={item.id} item={item} />;
           })}

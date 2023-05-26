@@ -5,7 +5,6 @@ export const StyledHeader = styled.header`
   //   background: ${(props) => props.bg};
   background: ${({ theme }) => theme.colors.header};
   padding: 2.5rem 0;
-  margin-bottom: 2rem;
 `;
 
 export const Grid = styled.div`

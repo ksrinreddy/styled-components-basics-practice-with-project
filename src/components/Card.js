@@ -4,7 +4,7 @@ import { Info, StyledCard } from "./styles/Card.styled";
 const Card = ({ item }) => {
   const { id, title, body, image } = item;
   return (
-    <StyledCard>
+    <StyledCard layout={id % 2 === 0 && "row-reverse"}>
       <Info>
         <h3>{title}</h3>
         <p>{body}</p>
