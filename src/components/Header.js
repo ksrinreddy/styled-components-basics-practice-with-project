@@ -5,7 +5,6 @@ import { Grid, Info, StyledHeader } from "./styles/Header.styled";
 import { Logo } from "./styles/Logo.styled";
 import { Nav } from "./styles/Nav.styled";
 import logo from "../images/logo.svg";
-import { Flex } from "./styles/Flex.styled";
 import { Image } from "./styles/Image.styled";
 import heroImage from "../images/illustration-mockups.svg";
 
